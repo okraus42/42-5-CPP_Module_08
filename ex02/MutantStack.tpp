@@ -6,7 +6,7 @@
 /*   By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:08:58 by okraus            #+#    #+#             */
-/*   Updated: 2024/06/02 13:39:13 by okraus           ###   ########.fr       */
+/*   Updated: 2024/06/02 14:31:58 by okraus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,24 @@ template<typename T> typename MutantStack<T>::iterator MutantStack<T>::end()
 {
 	ft_colorize(reinterpret_cast<uintptr_t>(this));
 	std::cout << "Iterator end.";
+	ft_uncolorize();
+	std::cout << std::endl;
+	return (this->c.end());
+}
+
+template<typename T> typename MutantStack<T>::const_iterator MutantStack<T>::begin() const
+{
+	ft_colorize(reinterpret_cast<uintptr_t>(this));
+	std::cout << "Const iterator begin.";
+	ft_uncolorize();
+	std::cout << std::endl;
+	return (this->c.begin());
+}
+
+template<typename T> typename MutantStack<T>::const_iterator MutantStack<T>::end() const
+{
+	ft_colorize(reinterpret_cast<uintptr_t>(this));
+	std::cout << "Const iterator end.";
 	ft_uncolorize();
 	std::cout << std::endl;
 	return (this->c.end());
