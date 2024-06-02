@@ -6,13 +6,13 @@
 /*   By: okraus <okraus@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 13:08:58 by okraus            #+#    #+#             */
-/*   Updated: 2024/06/01 15:59:46 by okraus           ###   ########.fr       */
+/*   Updated: 2024/06/02 13:15:52 by okraus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#ifndef ARRAY_HPP
-# define ARRAY_HPP
+#ifndef SPAN_HPP
+# define SPAN_HPP
 
 //# include <cstddef>
 # include <iostream>

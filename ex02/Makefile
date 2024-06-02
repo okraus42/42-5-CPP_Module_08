@@ -11,8 +11,8 @@
 # **************************************************************************** #
 
 NAME		=	MutantAbomination
-SRCS		=	main.cpp MutantStack.cpp colours.cpp
-HEADERS		=	MutantStack.hpp colours.hpp
+SRCS		=	main.cpp colours.cpp
+HEADERS		=	MutantStack.hpp MutantStack.tpp colours.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 CPPFLAGS	=	-Wall -Werror -Wextra -std=c++98 -g
 CPP			=	c++
